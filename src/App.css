@@ -1,0 +1,126 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto",sans-serif;;
+}
+
+.header-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  /* border: 2px solid rgb(119, 255, 0); */
+  /* background: #fff; */
+}
+
+.header-section .logo{
+  height: 3.5rem;
+}
+
+
+.navbar .nav-links{
+   display: flex;
+   gap: 2.3rem;
+}
+
+.nav-links li{
+  list-style: none;
+  font-size: 1rem;
+  /* word-spacing: 2em; */
+  letter-spacing: 0.1em;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+.home-bg-img{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://ntwist.com/wp-content/uploads/2023/01/home-image-bg-v6.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.home-banner{
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  
+}
+
+
+.home-banner > div:nth-child(1){
+  width: 43.5%;
+  padding-left: 3rem;
+}
+
+.home-banner > div:nth-child(2){
+  width: 55%;
+}
+
+.home-banner-right img{
+   width: 90%;
+   /* height: 400px; */
+}
+
+.home-banner-left h2{
+  font-size: 3rem;
+  color: #fff;
+  line-height: 0.95;
+}
+
+.home-banner-left button{
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: #007aff;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 3px;
+  border-style: none;
+}
