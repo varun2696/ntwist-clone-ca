@@ -1,50 +1,8 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-
 body{
   padding: 0;
   margin: 0;
-  font-family: "Roboto",sans-serif;;
+  font-family: "Roboto",sans-serif;
+  overflow-x: hidden;
 }
 
 .header-section{
@@ -115,12 +73,86 @@ body{
   line-height: 0.95;
 }
 
-.home-banner-left button{
-  font-size: 0.9rem;
-  font-weight: 600;
-  background-color: #007aff;
+
+.container{
+  width: 90vw;
+  display: flex;
+  margin: auto;
+  height: 60vh;
+  /* border: 2px solid red; */
+  margin-top: 3rem;
+  /* align-content: center; */
+}
+
+.container > div{
+  height: 55vh;
+  width: 47%;
+  /* border: 1px solid; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  margin:auto;
+}
+
+.img-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.text-container h1{
+color: #FF3A2D;
+font-size: 43px;
+font-weight: 500;
+/* text-align: left; */
+}
+
+.text-container p{
+  /* text-align: left; */
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+
+.footer{
+  height: 40vh;
+  background: #081528;
+  text-align: center;
+  padding-top: 3rem;
+  margin-top: 2rem;
+}
+
+.footerLogo{
+  height: 3rem;
+}
+
+.footer-list{
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.footer-list p{
   color: #fff;
-  padding: 12px 40px;
-  border-radius: 3px;
-  border-style: none;
+}
+
+.footer-list p:hover{
+  cursor: pointer;
+}
+
+.footer > p{
+  color: #496f88;
+  padding: 1rem 0;
+}
+
+.footer-icons{
+  width: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.footer-icons:hover{
+  cursor: pointer;
 }

@@ -1,6 +1,7 @@
 import React from 'react'
+import Button from './Button'
 
-const Navbar = () => {
+const HomeBanner = () => {
     return (
         <div className='home-bg-img'>
             <header className='header-section'>
@@ -20,16 +21,25 @@ const Navbar = () => {
                     <h2>
                         Data-powered solutions
                         <br />
-                        for Industrial Excellence 
+                        for Industrial Excellence
                     </h2>
-                    <button>Read More</button>
+                    <Button
+                        text={'Read More'}
+                        textColor={'#fff'}
+                        bg={'#007aff'}
+                        fontSize={'0.9rem'}
+                        pl={'40px'}
+                        pr={'40px'}
+                        pt={'10px'}
+                        pb={'10px'}
+                    />
                 </div>
                 <div className='home-banner-right'>
-                   <img src="https://ntwist.com/wp-content/uploads/2023/01/home-image-icons-v6.png" alt="" />
+                    <img src="https://ntwist.com/wp-content/uploads/2023/01/home-image-icons-v6.png" alt="" />
                 </div>
             </div>
         </div>
     )
 }
 
-export default Navbar
+export default HomeBanner
