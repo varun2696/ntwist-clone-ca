@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Button from './Button'
 
 const HomeBanner = () => {
+
+
+    useEffect(() => {
+        const navbar = document.querySelector('.header-section');
+        window.onscroll = () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-active');
+            } else {
+                navbar.classList.remove('nav-active');
+            }
+        };
+    }, [])
+
     return (
         <div className='home-bg-img'>
             <header className='header-section'>
-                <img className='logo' src="https://ntwist.com/wp-content/uploads/2021/12/ntwistlight.png" alt="logo" />
+                <img className='logo before-scroll-img' src="https://ntwist.com/wp-content/uploads/2021/12/ntwistlight.png" alt="logo" />
+                <img className='logo after-scroll-img' src="https://ntwist.com/wp-content/uploads/2021/12/ntwist-logo-dark.png" alt="logo" />
                 <nav className='navbar'>
                     <ul className='nav-links'>
                         <li>Home</li>

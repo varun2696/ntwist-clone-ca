@@ -6,10 +6,14 @@ body{
 }
 
 .header-section{
+  width: 95vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  position: fixed;
+  top:0;
+  transition: 0.5s ease-in-out;
   /* border: 2px solid rgb(119, 255, 0); */
   /* background: #fff; */
 }
@@ -18,11 +22,42 @@ body{
   height: 3.5rem;
 }
 
+.before-scroll-img{
+  display: block;
+}
+
+.after-scroll-img {
+  display: none;
+}
+
+
+/* this is for changing the bg of header on scroll */
+
+
+.nav-active {
+  background-color:#fff;
+  box-shadow: 5px -1px 12px -5px grey;
+}
+
+.nav-active .nav-links li{
+  color: #496f88;
+}
+
+.nav-active .before-scroll-img {
+  display: none;
+}
+.nav-active .after-scroll-img {
+  display: block;
+}
+
+/* header css for bg end  */
+
 
 .navbar .nav-links{
    display: flex;
    gap: 2.3rem;
 }
+
 
 .nav-links li{
   list-style: none;
