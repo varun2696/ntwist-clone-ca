@@ -1,28 +1,40 @@
-body{
+body {
   padding: 0;
   margin: 0;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
 
-.header-section{
+.home-bg-img {
+  position: relative;
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://ntwist.com/wp-content/uploads/2023/01/home-image-bg-v6.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.header-section {
   width: 95vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
   position: fixed;
-  top:0;
+  top: 0;
   transition: 0.3s ease-in-out;
   /* border: 2px solid rgb(119, 255, 0); */
   /* background: #fff; */
 }
 
-.header-section .logo{
+
+.header-section .logo {
   height: 3.5rem;
 }
 
-.before-scroll-img{
+.before-scroll-img {
   display: block;
 }
 
@@ -31,35 +43,76 @@ body{
 }
 
 
+/* .nav-links {
+  position: relative;
+} */
+
+.nav-links li:hover {
+  cursor: pointer;
+}
+
+
+ /* .dropdown-content {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 6%;
+  right: 16%;
+}
+
+#dropbtn:hover.dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}  */
+
+
+
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+
 /* this is for changing the bg of header on scroll */
-
-
 .nav-active {
-  background-color:#fff;
+  background-color: #fff;
   box-shadow: 5px -1px 12px -5px grey;
 }
 
-.nav-active .nav-links li{
+.nav-active .nav-links li {
   color: #496f88;
 }
 
 .nav-active .before-scroll-img {
   display: none;
 }
+
 .nav-active .after-scroll-img {
   display: block;
 }
 
+
 /* header css for bg end  */
 
 
-.navbar .nav-links{
-   display: flex;
-   gap: 2.3rem;
+.navbar .nav-links {
+  display: flex;
+  gap: 2.3rem;
 }
 
 
-.nav-links li{
+.nav-links li {
   list-style: none;
   font-size: 1rem;
   /* word-spacing: 2em; */
@@ -69,47 +122,39 @@ body{
 }
 
 
-.home-bg-img{
-  width: 100vw;
-  height: 100vh;
-  background-image: url('https://ntwist.com/wp-content/uploads/2023/01/home-image-bg-v6.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
-
-.home-banner{
+.home-banner {
   width: 100vw;
   height: 90vh;
   display: flex;
   margin: auto;
   align-items: center;
-  
+
 }
 
 
-.home-banner > div:nth-child(1){
+.home-banner>div:nth-child(1) {
   width: 43.5%;
   padding-left: 3rem;
 }
 
-.home-banner > div:nth-child(2){
+.home-banner>div:nth-child(2) {
   width: 55%;
 }
 
-.home-banner-right img{
-   width: 90%;
-   /* height: 400px; */
+.home-banner-right img {
+  width: 90%;
+  /* height: 400px; */
 }
 
-.home-banner-left h2{
+.home-banner-left h2 {
   font-size: 3rem;
   color: #fff;
   line-height: 0.95;
 }
 
 
-.container{
+.container {
   width: 90vw;
   display: flex;
   margin: auto;
@@ -119,36 +164,36 @@ body{
   /* align-content: center; */
 }
 
-.container > div{
+.container>div {
   height: 55vh;
   width: 47%;
   /* border: 1px solid; */
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
-  margin:auto;
+  margin: auto;
 }
 
-.img-container img{
+.img-container img {
   width: 100%;
   height: 100%;
 }
 
-.text-container h1{
-color: #FF3A2D;
-font-size: 43px;
-font-weight: 500;
-/* text-align: left; */
+.text-container h1 {
+  color: #FF3A2D;
+  font-size: 43px;
+  font-weight: 500;
+  /* text-align: left; */
 }
 
-.text-container p{
+.text-container p {
   /* text-align: left; */
   line-height: 1.6;
   margin-bottom: 2rem;
 }
 
 
-.footer{
+.footer {
   height: 40vh;
   background: #081528;
   text-align: center;
@@ -156,31 +201,32 @@ font-weight: 500;
   margin-top: 2rem;
 }
 
-.footerLogo{
+.footerLogo {
   height: 3rem;
 }
 
-.footer-list{
+.footer-list {
   width: 30vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
 }
-.footer-list p{
+
+.footer-list p {
   color: #fff;
 }
 
-.footer-list p:hover{
+.footer-list p:hover {
   cursor: pointer;
 }
 
-.footer > p{
+.footer>p {
   color: #496f88;
   padding: 1rem 0;
 }
 
-.footer-icons{
+.footer-icons {
   width: 5vw;
   display: flex;
   justify-content: space-between;
@@ -188,6 +234,6 @@ font-weight: 500;
   margin: auto;
 }
 
-.footer-icons:hover{
+.footer-icons:hover {
   cursor: pointer;
 }

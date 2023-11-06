@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import Button from './Button'
 
-const HomeBanner = () => {
 
+const HomeBanner = () => {
 
     useEffect(() => {
         const navbar = document.querySelector('.header-section');
@@ -23,7 +23,9 @@ const HomeBanner = () => {
                 <nav className='navbar'>
                     <ul className='nav-links'>
                         <li>Home</li>
-                        <li>Industeries</li>
+                        <li id='dropbtn'>
+                            Industries
+                        </li>
                         <li>AI Software</li>
                         <li>Blog</li>
                         <li>Contact Us</li>
@@ -52,6 +54,7 @@ const HomeBanner = () => {
                     <img src="https://ntwist.com/wp-content/uploads/2023/01/home-image-icons-v6.png" alt="" />
                 </div>
             </div>
+            
         </div>
     )
 }
